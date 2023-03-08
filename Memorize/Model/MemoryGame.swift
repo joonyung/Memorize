@@ -50,7 +50,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
             cards.append(Card(content: content, id: pairIndex * 2))
             cards.append(Card(content: content, id: pairIndex * 2 + 1))
         }
-//        cards.shuffle()
+        cards.shuffle()
     }
     
     struct Card: Identifiable {
@@ -131,19 +131,3 @@ extension Array {
     
     
 }
-
-
-
-
-
-// HW
-//protocol Theme {
-//    var name: String { get }
-//    var emoji: [String] { get }
-//    var numberOfCardPairsToShow: Int { get set }
-//    var color: String { get }
-//}
-
-
-
-
